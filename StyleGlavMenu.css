@@ -1,6 +1,7 @@
 
 body
 {
+    overflow-x:hidden;
     margin:0;
     background-image: url("FrameGlavMenu.png");
     background-repeat: no-repeat;
@@ -10,6 +11,7 @@ body
 {
     nav
     {
+        animation: nav 1s;
         position:fixed ;
         display: grid;
         grid-template-columns: 12.5vw 25vw 25vw 25vw 12.5vw;
@@ -23,6 +25,7 @@ body
     .Nav_Item2,
     .Nav_Item3
     {
+        animation: nav 1s;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -35,6 +38,7 @@ body
     }
     .Nav_Selection
     {
+        animation: nav 1s;
         font-family: "Yu Gothic UI Light";
         width:10vw;
         height:4.5vh;
@@ -47,9 +51,10 @@ body
 {
     nav
     {
+        animation: nav 1s;
         position:fixed ;
         display: grid;
-        grid-template-columns: 25vw 25vw 25vw 25vw ;
+        grid-template-columns: 20vw 26vw 26vw 26vw ;
         width:100%;
         align-items: center;
         height:6.5vh;
@@ -60,6 +65,7 @@ body
     .Nav_Item2,
     .Nav_Item3
     {
+        animation: nav 1s;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -69,16 +75,27 @@ body
         font-size:2.5vw;
         text-decoration: none;
         color:white;
+
     }
+
     .Nav_Selection
-     {
-         font-family: "Yu Gothic UI Light";
-         width:25vw;
-         height:3vh;
-         align-content: center;
-         background: #D4DBE2;
-         font-size: 2.5vw;
-     }
+    {
+        animation: nav 1s;
+        font-family: "Yu Gothic UI Light";
+        width:20vw;
+        height:3vh;
+        align-content: center;
+        background: #D4DBE2;
+        font-size: 2.5vw;
+    }
+}
+@keyframes nav
+{
+    from{margin-top:-10vw;}
+}
+@keyframes text
+{
+    from{margin-left:-10%;color: #1D0F0F;}
 }
 .Nav_Item2:active,
 .Nav_Item3:active
@@ -101,13 +118,14 @@ footer
     color:white;
 }
 footer>ul
-{   font-size: 2vw;
+{   font-size: 1.5vw;
     font-family: sans-serif;
     list-style-type: none;
 }
 
 .greeting
 {
+    animation: text 2s;
     justify-content: center;
     padding-top:17vh;
     height:10vh;
@@ -119,6 +137,7 @@ footer>ul
 }
 .Question1
 {
+    animation: text 2s;
     margin-left: 4%;
     margin-bottom: 2%;
     font-size:4vw;
@@ -128,9 +147,10 @@ footer>ul
 }
 .Question2
 {
+    animation: text 2s;
     text-align: center;
     font-size: 4vw;
-    color:aqua;
+    color: #8c00ff;
     font-family: "Yu Gothic UI Light";
     margin-left: 4%;
     width:60%;
@@ -147,7 +167,7 @@ footer>ul
 }
 .Text1
 {
-    color:aqua;
+    color:#8c00ff;
     font-size: 5vw;
     font-family: "Yu Gothic UI Light";
     display: flex;
