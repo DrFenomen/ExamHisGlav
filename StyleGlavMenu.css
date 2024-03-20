@@ -167,6 +167,7 @@ footer>ul
 }
 .Text1
 {
+    animation: text 2s;
     color:#8c00ff;
     font-size: 5vw;
     font-family: "Yu Gothic UI Light";
@@ -175,6 +176,7 @@ footer>ul
 }
 .Text2
 {
+    animation: text 2s;
     font-family: "Yu Gothic UI Light";
     color:white;
     font-size: 4.5vw;
@@ -185,6 +187,7 @@ footer>ul
 }
 .Text3
 {
+    animation: text 2s;
     color:white;
     font-size: 4.5vw;
     font-family: "Yu Gothic UI Light";
